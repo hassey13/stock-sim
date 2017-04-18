@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   font-family: sans-serif;
+  color: #323232;
 }
 
 hr {
@@ -23,14 +24,55 @@ hr {
   font-family: cursive;
 }
 
-.heading h3{
-  font-family: serif;
-}
-
-.ticker {
-  float:left;
+.heading-sub {
+  margin-top: -10px;
+  font-family: arial;
+  font-style: italic;
 }
 
 .investment {
   float: right;
+}
+
+.ticker {
+  float:left;
+  margin: 20px 0 0 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #72FB8F;
+  color: #fff;
+}
+
+.ticker-price {
+  float: left;
+}
+
+.ticker-price p{
+  float: left;
+  font-size: 2em;
+  line-height: .5;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.ticker-price-change {
+  float: right;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.ticker-price-change p{
+  line-height: 1;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
+
+.ticker-price-change .larger{
+  font-size: 1.2em;
+}
+
+.clear {
+  clear: both;
 }

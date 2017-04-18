@@ -4,13 +4,11 @@ import Heading from './Heading'
 import Ticker from './Ticker'
 import Investment from '../containers/Investment'
 
-const Header = (
-  props
-) => (
+const Header = ( props ) => (
   <div className='header'>
-    <Heading />
-    <Ticker price={ props.price } />
-    <Investment price={ props.price } />
+    <Heading stock={ props.stock } />
+    <Ticker stock={ props.stock } />
+    <Investment stock={ props.stock } />
     <hr />
   </div>
 )
