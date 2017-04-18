@@ -1,5 +1,36 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: sans-serif;
+}
+
+hr {
+  margin: 40px 0 10px 0;
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+  clear: both;
+}
+
+.header {
+  padding: 0 0 25px 0;
+}
+
+.heading {
+  float:left;
+}
+
+.heading h1{
+  font-family: cursive;
+}
+
+.heading h3{
+  font-family: serif;
+}
+
+.ticker {
+  float:left;
+}
+
+.investment {
+  float: right;
 }
