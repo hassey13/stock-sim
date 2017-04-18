@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Heading = () => (
+const Heading = ( props ) => (
   <div className='heading'>
-    <h1>Button</h1>
-    <h3>BTN</h3>
+    <h1>{ props.stock.name }</h1>
+    <p className='heading-sub'>Symbol: { props.stock.ticker }</p>
   </div>
 )
 
