@@ -38,10 +38,8 @@ class App extends Component {
       let stock = this.state.stock
       stock = Object.assign( {}, stock, { price: price })
       this.setState( { stock: stock } )
-      document.title = `Button | ${this.state.stock.price}`
+      document.title = `${this.state.stock.name} | ${this.state.stock.price}`
     })
-
-
 
   }
 
