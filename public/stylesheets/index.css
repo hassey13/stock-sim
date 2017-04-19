@@ -12,6 +12,16 @@ hr {
   clear: both;
 }
 
+input {
+  width: 50px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
 .header {
   padding: 0 0 25px 0;
 }
@@ -30,9 +40,6 @@ hr {
   font-style: italic;
 }
 
-.investment {
-  float: right;
-}
 
 .ticker {
   float:left;
@@ -49,6 +56,14 @@ hr {
 
 .red {
   background-color: red;
+}
+
+.green-font {
+  color: #72FB8F;
+}
+
+.red-font {
+  color: red;
 }
 
 .ticker-price {
@@ -82,4 +97,51 @@ hr {
 
 .clear {
   clear: both;
+}
+
+.i {
+  font-style: italic;
+}
+
+.investment {
+  text-align: center;
+}
+
+.investments-panel {
+  padding: 25px;
+}
+
+.transaction-window {
+  -webkit-box-shadow: 0px 13px 46px 4px rgba(220,220,220,1);
+  -moz-box-shadow: 0px 13px 46px 4px rgba(220,220,220,1);
+  box-shadow: 0px 13px 46px 4px rgba(220,220,220,1);
+  border-radius: 20px;
+  width: 275px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 0 20px 0;
+  width: 75px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sell-button {
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0 20px 20px;
+  width: 35px;
+  font-size: 0.8em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
