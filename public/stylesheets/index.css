@@ -40,8 +40,15 @@ hr {
   border: 1px solid #dcdcdc;
   border-radius: 5px;
   padding: 10px;
-  background-color: #72FB8F;
   color: #fff;
+}
+
+.green {
+  background-color: #72FB8F;
+}
+
+.red {
+  background-color: red;
 }
 
 .ticker-price {
