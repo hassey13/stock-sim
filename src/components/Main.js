@@ -9,8 +9,8 @@ const Main = (
 ) => (
   <div className='header'>
     <Investments stock={ props.stock } />
-    <StockData />
-    <StockHeadlines />
+    <StockData stock={ props.stock } />
+    <StockHeadlines stock={ props.stock } />
   </div>
 )
 

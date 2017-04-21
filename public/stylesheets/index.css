@@ -18,8 +18,60 @@ input {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: #5F9CFF;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  table-layout: fixed;
+  line-height: 1.25;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: .35em;
+}
+
+table td {
+  width: 130px;
+  padding: .625em;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }
 
 .header {
@@ -144,4 +196,52 @@ li {
 
 .hidden {
   display: none;
+}
+
+.stock-data {
+  padding: 25px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .transaction-window div, li, p {
+    font-size: 0.8em;
+  }
+
+  .transaction-window {
+    width: 200px;
+  }
+
+  .sell-button {
+    margin: 20px 0 20px 5px;
+  }
+
+  .investments-panel {
+    padding: 25px 0 25px 0;
+    font-size: 0.8em;
+  }
+
+  table {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  table caption {
+    font-size: 1em;
+    margin: 0 0 0 0;
+  }
+
+  table tr {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: .35em;
+  }
+
+  table td {
+    width: 92px !important;
+    font-size: 0.8em;
+  }
 }

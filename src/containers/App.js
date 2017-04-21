@@ -37,6 +37,12 @@ class App extends Component {
     socket.on('priceUpdate', ( price ) => {
       let stock = this.state.stock
       stock = Object.assign( {}, stock, { price: price })
+      if ( price > this.state.stock.high) {
+        stock = Object.assign( {}, stock, { high: price })
+      }
+      else if ( price < this.state.stock.low ) {
+        stock = Object.assign( {}, stock, { low: price })
+      }
       this.setState( { stock: stock } )
       document.title = `${this.state.stock.name} | ${this.state.stock.price}`
     })
