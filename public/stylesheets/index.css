@@ -242,18 +242,34 @@ table td {
   border-bottom: 5px solid #232323;
 }
 
-.action-button {
-	position: relative;
-	padding: 10px 40px;
-  margin: 0px 10px 10px 0px;
-  float: left;
-	border-radius: 10px;
-	font-family: 'Pacifico', cursive;
-	font-size: 25px;
-	color: #FFF;
-	text-decoration: none;
+.intro {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -80px 0 0 -200px;
 }
 
+.intro-button {
+  margin-top: calc(50% - 150px);
+  margin-left: calc(50% - 75px);
+  position: absolute;
+  text-decoration: none;
+	padding: 20px 80px;
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	color: #FFF;
+  border-radius: 10px;
+  border-bottom: 5px solid #dcdcdc;
+  text-shadow: 0px 2px #757575;
+}
+
+.intro-button:active {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
 
 @media only screen and (max-width: 550px) {
 
