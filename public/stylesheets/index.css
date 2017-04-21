@@ -35,6 +35,10 @@ li {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 table {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
@@ -204,7 +208,80 @@ table td {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+.invest-ad {
+  background-color: #232323;
+  width: 90%;
+  padding: 15px 10px 10px 10px;
+  margin-left: calc(5% - 20px);
+  border: 1px solid #DCDCDC;
+  color: #fff;
+  font-size: .9em;
+}
+
+.float-right {
+  float: right;
+  padding-right: 10px;
+}
+
+.invest-ad-button {
+  padding: 5px 20px;
+  margin: 0px 10px 10px 0px;
+  float: right;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1em;
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 5px solid #dcdcdc;
+	text-shadow: 0px 2px #757575;
+}
+
+.invest-ad-button:active {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 5px solid #232323;
+}
+
+.action-button {
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 550px) {
+
+  .invest-ad {
+    background-color: #232323;
+    width: 90%;
+    padding: 15px 10px 10px 10px;
+    margin-left: calc(5% - 20px);
+    border: 1px solid #DCDCDC;
+    color: #fff;
+    font-size: .9em;
+  }
+
+  .float-right {
+    float: right;
+    padding-right: 10px;
+  }
+
+  .ad-text {
+    width: 50%;
+  }
+
+  .invest-ad-button {
+    padding: 5px 10px;
+    margin: 8px 10px 10px 0px;
+    font-size: 0.8em;
+    border-bottom: none;
+  }
 
   .transaction-window div, li, p {
     font-size: 0.8em;

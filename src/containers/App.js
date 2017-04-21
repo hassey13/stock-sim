@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Advertisements from './Advertisements'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import '../../public/stylesheets/index.css';
@@ -55,6 +56,7 @@ class App extends Component {
       return (
         <div>
           <Header stock={ this.state.stock } />
+          <Advertisements />
           <Main stock={ this.state.stock }/>
         </div>
       )
