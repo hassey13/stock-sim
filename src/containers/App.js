@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    const socket = io.connect( 'http://localhost:4000' )
+    const socket = io.connect( 'http://stock-sim-server.herokuapp.com' )
     this.setState( { socket: socket } )
 
     socket.on('priceUpdate', ( price ) => {
