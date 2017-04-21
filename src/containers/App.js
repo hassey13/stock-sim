@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Advertisements from './Advertisements'
+import Intro from '../components/Intro'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import '../../public/stylesheets/index.css';
@@ -13,7 +15,7 @@ class App extends Component {
     this.state = {
       socket: null,
       price: null,
-      buttonClicked: true,
+      buttonClicked: false,
       stock: {
         name: "Button",
         ticker: "BTN",
@@ -37,10 +39,22 @@ class App extends Component {
     socket.on('priceUpdate', ( price ) => {
       let stock = this.state.stock
       stock = Object.assign( {}, stock, { price: price })
+      if ( price > this.state.stock.high) {
+        stock = Object.assign( {}, stock, { high: price })
+      }
+      else if ( price < this.state.stock.low ) {
+        stock = Object.assign( {}, stock, { low: price })
+      }
       this.setState( { stock: stock } )
       document.title = `${this.state.stock.name} | ${this.state.stock.price}`
     })
 
+  }
+
+  handleClick() {
+    this.setState( {
+      buttonClicked: true
+    })
   }
 
   render() {
@@ -49,12 +63,13 @@ class App extends Component {
       return (
         <div>
           <Header stock={ this.state.stock } />
+          <Advertisements />
           <Main stock={ this.state.stock }/>
         </div>
       )
     }
 
-    return ( <button>Click me please!</button>)
+    return ( <Intro onClick={ this.handleClick.bind(this) } />)
   }
 }
 
