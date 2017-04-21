@@ -96,6 +96,9 @@ table td {
   font-style: italic;
 }
 
+.wallet {
+  margin-top: 25px;
+}
 
 .ticker {
   float:left;
